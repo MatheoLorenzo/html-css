@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -30,7 +31,23 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(61, 60, 60);
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(61, 60, 60);
+        }
+
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        h1 {
+            background-color: black;
             color: white;
         }
 
@@ -64,7 +81,7 @@
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td class="num">2   0 538 718</td>
+                <td class="num"> 20 538 718</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
